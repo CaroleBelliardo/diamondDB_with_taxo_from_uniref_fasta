@@ -36,6 +36,8 @@ g++ -std=c++17 extract_ids.cpp -o extract_ids
 ./extract_ids uniref90.fasta uniref90_map.txt
 ```
 
+Note that this process could be run on Genotoul or other slum-managed servers with the script `run_extract_ids.sh`, but you must tune the SLURM file header according to available computing resources.
+
 ### 2. Run DIAMOND makedb to Build the Database
 
 After generating the `map.txt` file, use the DIAMOND `makedb` tool to create the database. Submit this process on a cluster using the following SLURM script:
