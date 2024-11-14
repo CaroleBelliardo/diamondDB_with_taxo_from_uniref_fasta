@@ -16,14 +16,14 @@ module load bioinfo/DIAMOND/2.1.9
 
 ## -- path and env. variables
 
-map='./TAXONOMY/map.txt'
-nodes="./TAXONOMY/nodes.dmp"
-names=".//TAXONOMY/names.dmp"
+nodes="/work/bank2/ncbi/taxdump/current/flat/nodes.dmp"
+names="/work/bank2/ncbi/taxdump/current/flat/names.dmp"
 
-fasta= $1           # fasta input file
-dbout= ${fasta}.dmd # db name
+map=$1
+fasta=$2           # fasta input file
+dbout=${3}.dmdDB # db name
 
 diamond makedb --threads $SLURM_JOB_CPUS_PER_NODE --taxonnodes $nodes --taxonnames $names --taxonmap $map --in $fasta -d $dbout
 
 ## run : 
-# sbatch diamond_makedb.sh <fasta_path> <db_name>
+# sbatch diamond_makedb.sh <mapFile_path> <fasta_path> <db_name>
