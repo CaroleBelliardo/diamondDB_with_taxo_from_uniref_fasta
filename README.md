@@ -1,6 +1,6 @@
 # DIAMOND Database Generation with Taxonomic Information
+This repository contains scripts to generate a [DIAMOND](https://github.com/bbuchfink/diamond) database with taxonomic information. The resulting database can be used for Last Common Ancestor (LCA) and other taxonomic-related processing, utilizing data from the [UNIREF database](https://www.ebi.ac.uk/training/online/courses/uniprot-quick-tour/the-uniprot-databases/uniref/).
 
-This repository contains a set of scripts designed to generate a [DIAMOND](https://github.com/bbuchfink/diamond) database with taxonomic information. The resulting database can be used for Last Common Ancestor (LCA) and other taxonomic-related processing, utilising data from the [UNIREF database](https://www.ebi.ac.uk/training/online/courses/uniprot-quick-tour/the-uniprot-databases/uniref/).
 
 ## Steps to Generate the DIAMOND Database
 
