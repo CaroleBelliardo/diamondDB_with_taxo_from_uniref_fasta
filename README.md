@@ -60,7 +60,7 @@ Where:
 - `$map`: Path to the `protID-taxID` correspondence file generated in Step 1.
 - `$nodes`: Path to the NCBI `nodes.dmp` file.
 - `$names`: Path to the NCBI `names.dmp` file.
-- `$fasta`: Path to the input FASTA file.
+- `$fasta`: Path to the input `FASTA` file.
 - `$dbout`: Name for the output DIAMOND database.
 
 **Notes**
